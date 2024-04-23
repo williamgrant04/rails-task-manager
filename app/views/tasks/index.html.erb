@@ -1,3 +1,5 @@
 <% @tasks.each do |task| %>
   <%= link_to "#{task.title}", task_path(task) %>
 <% end %>
+
+<%= link_to "New", tasks_new_path %>
